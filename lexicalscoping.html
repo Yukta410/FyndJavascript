@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//================== lexical scoping =====================//
+        // let d=67   //lexical scope for outer function
+
+    //    function outer(){     
+    //    let a=6;                 //lexical scope for inner function
+    //    console.log(a)           //lexical scope for inner function
+    //    console.log(d)           //lexical scope for inner function
+
+    //    function inner(){
+    //     let b=7;
+    //     console.log(a)
+    //     console.log(b)
+    //     console.log(d)
+
+    //    }
+    //    inner()
+    //    }
+    //    outer()
+
+ // ==================================//
+//================== Function Hoisting =====================//
+//         sum(5,10)
+//    function sum(a,b){
+//         add = a+b;
+//         console.log('sum is '+add);
+//     }
+
+//var sum=function(a,b){               // ......function expression(function is inside varible)
+//     add=a+b;
+//     console.log('add is ' +add)
+// }
+// sum(5,6)
+
+//var sum=undefined;          //type error..because interpreter is not able to decide wehther the sum is var or a function
+// function sum(a,b){
+//     add=a+b;
+//     console.log('add is '+add)
+// }
+// sum(5,9)
+//========================================//
+//================== Function in Ecma Script =====================//
+
+// sum=(a,b)=>{           //function written using () and=> no need of funstion keyword
+//     add=a+b;
+//     console.log('sum is add '+add);
+// }
+// sum(4,4)
+//================variable hoisting ===================//
+
+//-------Normal Code-------//
+b=4;
+console.log('My roll number is - '+b);
+var b;
+
+//------Code in execution phase------//
+var b;
+b = 4;
+console.log('My roll number is - '+b)
+       
+    </script>
+    
+</body>
+</html>

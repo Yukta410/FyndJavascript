@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+  background-color: #eef5db;
+  padding: 10px 15px;
+  height: 80px;
+}
+#blgname{
+    padding-left: 50px;
+    float: left;
+    font-size: 22px;
+
+}
+.navb {
+    display: block;
+    height: 50px;
+}
+.navb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navb li {
+    float: right;
+}
+.navb li a {
+    display: inline-block;
+    padding: 14px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+button{
+    background-color:#eef5db ;
+    border: silver ;
+    border-radius: 10%;
+    margin-left: 20px;
+    height: 40px;
+}
+button:hover {   
+    opacity: 0.7;   
+} 
+#afterheader{
+    width: 75%;
+    margin-left: 190px;
+    color: silver;   
+}
+
+/* ===========container================= */
+.containermain{
+    display: flex;
+}
+.container1{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+.container2{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+img{
+    height: 500px;
+    width: 500px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <nav class="navb">                                 
+        <ul>
+            <li id="blgname"><h1 id="head">The Terotale</h1></li>
+            <li><form>
+                <select id="timezn" onchange="selectzone();">
+                <option value="selected">Select</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="australia">Australia</option>
+                </select>
+                </form></li>
+
+            <!-- <li><button><a href="./timeZone.html">Time Zones</a></button></li> -->
+
+            <li><button><a href="#">Order</a></button></li>
+            <li><button ><a href="#">Menu</a></button></li>
+            <li><button><a href="#">About</a></button></li>
+            <li><button><a href="#">Home</a></button></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="container">
+        <div class="time"> 
+             <p id="indiatime"></p>
+            
+        </div>
+        <div class="time">
+             <p id="ustime"></p>
+        </div>
+        <div class="time"> 
+            <p id="austime"></p>
+        </div> 
+    </div>
+    <div class="containermain">
+        <div class="container1">
+            <h1>We Belive Good Food Offer Great Smile</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro fugiat, aspernatur ipsam cumque pariatur at neque? Eos ad a quo? Voluptates laborum quasi, eius optio quaerat ipsam aliquid deserunt dolor!</p>
+        </div>
+        <div class="container2">
+            <img src="./restut.jpg" alt="">
+        </div>
+    </div>
+    <script>
+function selectzone()
+
+{
+    var s = document.getElementById("timezn").value;
+
+{
+    if(s=="india")
+    {
+        var indiantime=function(){
+    document.getElementById("indiatime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Kolkata', timeStyle:'long', hourCycle:'h12'})
+    }
+
+indiantime()
+setInterval(indiantime,1000)
+
+    }
+    
+// ====================================
+if(s=="usa"){
+    var usatime=function(){
+    document.getElementById("ustime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Jakarta', timeStyle:'long', hourCycle:'h24'})
+}
+
+usatime()
+setInterval(usatime,1000)
+}
+
+
+// =====================================
+if(s=="australia")
+{
+    var ausntime=function(){
+    document.getElementById("austime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Australia/Sydney', timeStyle:'long', hourCycle:'h24'})
+}
+
+ausntime()
+setInterval(ausntime,1000)
+}
+
+}
+}
+
+    </script>
+    
+</body>
+</html>

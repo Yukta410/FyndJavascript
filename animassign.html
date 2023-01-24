@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .div1{
+            width: 500px;
+            height: 10px;
+            background-color: black;
+            right: 500px;
+            bottom: 750px;
+            position: absolute;
+            animation-name: line1;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .div2{
+            width: 10px;
+            height: 500px;
+            background-color: black;
+            right: 20px;
+            bottom: 100px;
+            position: absolute;
+            animation-name: line2;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .div3{
+            width: 500px;
+            height: 10px;
+            background-color: black;
+            right: 500px;
+            bottom: 20px;
+            position: absolute;
+            animation-name: line3;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .div4{
+            width: 10px;
+            height: 500px;
+            background-color: black;
+            right: 1500px;
+            bottom:100px;
+            position: absolute;
+            animation-name: line4;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes line1{
+            0%{background-color: #39FF14; right: 500px; bottom: 750px;}
+            100%{background-color: #39FF14; bottom: 640px; right: 500px; }
+        }
+        @keyframes line2{
+            0%{background-color: #1F51FF; right: 20px; bottom: 140px; }
+            100%{background-color: #1F51FF; right: 500px; bottom: 140px;}
+        }
+        @keyframes line3{
+            0%{background-color: #FF3131; right: 500px; bottom: 20px;}
+            100%{background-color: #FF3131;bottom: 140px; right: 500px; }
+        }
+        @keyframes line4{
+            0%{background-color: #FFFF33; right: 1500px; bottom: 140px;}
+            100%{background-color: #FFFF33; bottom: 140px; right: 990px; }
+        } 
+    </style>
+</head>
+<body>
+    <div class="div1"></div>    <div class="div2"></div>    <div class="div3"></div>    <div class="div4"></div>    
+</body>
+</html>
+
+
+
+
+<!-- https://drive.google.com/drive/folders/1bV-kpjrrKoSNQWmEEHYcgBPglWZtBrKI?usp=share_link -->

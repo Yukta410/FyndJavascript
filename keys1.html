@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <h1 id="h1">Keyboard Event</h1>
+        <p>OnKeyDown</p>
+        <input type="text" id="down">
+        <p>OnKeyUp</p>
+        <input type="text" id="up">
+        <p>OnKeyPress</p>
+        <input type="text" id="press">
+    </div>
+    <script>
+        let keyevent1=document.getElementById('down')
+        keyevent1.addEventListener('keydown',function shoW(){
+            // alert(this.value)
+            document.getElementById('form').style.backgroundColor=this.value
+        })
+
+        let keyevent2=document.getElementById('up')
+        keyevent2.addEventListener('keyup',function shoW(){
+            // alert(this.value)
+            document.getElementById('form').style.backgroundColor=this.value
+        })
+
+        let keyevent3=document.getElementById('press')
+        keyevent3.addEventListener('keypress',function shoW(){
+            // alert(this.value)
+            document.getElementById('form').style.backgroundColor=this.value
+        })
+    </script>
+</body>
+</html>

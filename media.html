@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            text-align: center;
+            background-color: yellow;
+            font-size: xx-large;
+            display: none;
+        }
+
+        @media only screen and (max-width:350px){
+            #div1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        
+        @media only screen and (min-width:350px) and (max-width:500px){
+            #div2{
+                display: block;
+                background-color: palevioletred;
+            }
+        }
+
+                
+        @media only screen and (min-width:500px) and (max-width:800px){
+            #div3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+
+
+                
+        @media only screen and (min-width:800px){
+            #div4{
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="div1" class="demo">This is div one for phones</div>
+   <div id="div2" class="demo">This is div two for tablets</div>
+   <div id="div3" class="demo">This is div three for laptops</div>
+   <div id="div4" class="demo">This is div four for Broader screens</div>
+
+</body>
+</html>

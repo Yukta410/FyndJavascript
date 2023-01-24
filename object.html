@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//======== object1========//
+    //     var a={
+    //     fname:'Yukta'
+    // }
+    // document.write(a.fname);
+
+  //======== object2========//
+            // var book = new Object(); //Object is a class 
+            // book.subject ="JS";
+            // book.author= "ABC";
+            // document.write("Book Name is "+ book.subject+"<br>");
+            // document.write("Book Author is "+ book.author);
+        
+//======== object3========//
+            // function book(title,author)
+            // {
+            //     this.title =title;
+            //     this.author=author;
+            // }
+            // title = "absc";
+            // author="asdhash"
+            // book("asd","xyz");
+            // console.log(author);
+
+            // var myBook = new book('JS','ABC');
+            // document.write("Book Name is "+ myBook.title);
+            // this keyword
+            // console.log(this);
+                
+            // function show()
+            // {
+            //     console.log('This is function');
+            //     console.log(this);
+            // }
+            // show();
+
+                // a.this
+                // document.getElementById('demo').innerHTML=a;
+                // console.log(a);
+
+//======== object4========//
+            // const a = {
+            //     name:'abc',
+            //     age:45,
+            //     sum :function()
+            //     {
+            //         var add = 2+2;
+            //         console.log('sum is'+add);
+            //         console.log(this);
+            //     }
+            // }
+            // a.sum();
+
+
+//========array inside object========//
+    // var a={
+    //     arr: [2, 3, 4, 5, 6]
+    // }
+    // document.write(a.arr);
+
+    // var a=[{
+    //     fname:'Yukta',
+    //     lname:'Bhatkar',
+    //     Rollno:4
+    // }     
+    // ];
+    // document.write(a[0].fname)
+    // console.log(a[0])
+
+//========object inside object========//
+// var a={
+//     obj1:{
+//         fname:'Yukta',
+//         lname:'Bhatkar'
+//         },
+
+//     obj2:{
+//         Rollno:4,
+//         class:'BE Comp'
+//         } 
+// };
+// console.log(a.obj1.fname);
+// console.log(a.obj2);
+
+//========array of objects========//
+var car=[
+    {
+        name:'Harrier',
+        color:'Dark',
+        Price:1500000
+    },
+    {
+        name:'Eartiga',
+        color:'White',
+        Price:100000
+    },
+    {
+        name:'C-class',
+        color:'Silver',
+        Price:15000000
+    }
+];
+// document.write(car.tata.name);
+console.log(car.merecedes);
+
+for(let i=0; i<car.length; i++)
+{
+    document.write(car[i].name +'<br>');
+    document.write(car[i].color+'<br>');
+    document.write(car[i].Price+'<br>');
+}
+    </script>
+    
+</body>
+</html>
+
+
+

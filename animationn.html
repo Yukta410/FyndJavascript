@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        
+    width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    animation-name: anim;
+    animation-name: line1;
+    position: absolute;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-iteration-count: 4; */
+    /* animation-direction: reverse; */
+    /* animation-direction:normal; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-in; */
+    animation: anim 4s linear 2s infinite alternate;
+    
+    }
+
+@keyframes anim{
+    0%{background-color: aliceblue; right: 300px; bottom: 300px;}
+    25%{background-color: black; right: 0px; bottom: 300px; }
+    50%{background-color: rebeccapurple; right: 0px; bottom: 0px;}
+    75%{background-color: paleturquoise; bottom: 0px; right: 300px;}
+    100%{background-color: cyan; right: 300px; bottom: 300px;}
+
+
+}
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>
+
+
+
+ 
+
+
+
+
+
+
+

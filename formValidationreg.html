@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300&family=Rubik+Spray+Paint&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }  
+        Body { 
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        } 
+        .container {   
+            border: 2px silver solid;
+            padding: 25px;   
+            background-color: #eef5db;
+            height: 370px;
+            width: 470px;
+            margin-top: 60px;
+            margin-left: 500px;  
+            }   
+        .subscribe {   
+               background-color: #7a9e9f;   
+               width: 100%;  
+                color: black;   
+                padding: 15px;   
+                margin: 10px 0px;   
+                border: none;   
+                cursor: pointer;   
+                 }   
+         .input {   
+                width: 100%;   
+                margin: 8px 0;  
+                padding: 12px 20px;   
+                display: inline-block;   
+                border: 2px solid #7a9e;   
+                box-sizing: border-box;   
+            }  
+         button:hover {   
+                opacity: 0.7;   
+            } 
+        
+        .forget{
+                margin-left: 110px;
+            }
+        a{
+                text-decoration: none;
+                 color: black;
+        }
+        /* ========Css for Footer========== */
+.footer{
+    height: 87px;
+    background-color: #7a9e9f; 
+    border: none;
+    margin-top: 160px;
+    padding: 20px;
+}
+li{
+    list-style: none;
+}
+.fitems{
+    margin-left: 40px;
+    font-size: 25px;
+}
+.dec{
+    text-decoration: none;
+    color: black;
+}
+#socmedia{
+    margin-left: 1100px;
+}   
+#mark{
+    margin-top: -20px;
+}
+/* ==========css for header======== */
+.head{
+    /* background-color: #eef5db;  */
+  padding: 10px 15px;
+}
+#blgname{
+    padding-left: 200px;
+    float: left;
+    font-size: 25px;
+}
+.navb {
+    display: block;
+    height: 50px;
+}
+.navb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navb li {
+    float: right;
+}
+.navb li a {
+    display: inline-block;
+    padding: 14px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color:#7a9e9f ;
+    border: silver ;
+    border-radius: 10%;
+    margin-left: 20px;
+    height: 40px;
+}
+#afterheader{
+    width: 75%;
+    margin-left: 190px;
+    color: silver;   
+}
+
+        </style>   
+</head>
+<body>
+    <div class="head">
+          <nav class="navb">                                 
+          <ul>
+                <li id="blgname"><h1 id="head">D Décor</h1></li>
+                <li><button class="btn"><a href="./contact.html">Subscribe</a></button></li>
+                <li><button class="btn"><a href="./About.html">About</a></button></li>
+                <li><button class="btn"><a href="./Blog.html">Home</a></button></li>
+          </ul>
+      </nav>
+      </div>
+      <hr id="afterheader">
+    <form onsubmit="regEx();">  
+        <div class="container">   
+            <label>Your Name : </label>   
+            <input class="input" type="text" placeholder="Enter Name" name="name" required>  
+            <label>Phone Number : </label>   
+            <input class="input" type="text" placeholder="Enter Email" name="email" required>  
+            <br> <br>
+            <button class="subscribe" type="submit">Submit</button>   
+        </div>   
+    </form>     
+     <!-- ==========Footer========= -->
+     <div class="footer commonname">
+        <table>
+            <tr>
+                <td><p class="fitems">D Décor</p></td>
+                <td>
+                    <ul>
+                        <li id="socmedia">
+                            <a href="https://www.instagram.com" target="_blank"><img src="./instagram.png" alt="Instagram" title="Instagram"></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook" title="Facebook"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="./twitter.png" alt="Twitter" title="Twitter"></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr> 
+        </table>
+       <center><p id="mark">@2023 by D Décor.com</p></center>   
+    </div> 
+    <script>
+function regEx(){
+// function name(){
+// var name = document.getElementsByTagName("input");
+// var nameField = name.search(/[a-zA-Z]/g);
+// if (nameField == -1||name == "")
+// {
+// alert("Please enter only letters in this field.");
+// }
+// }
+function phnnumber(){
+var phn = document.getElementsByTagName("input")[1].value;
+var phnnumber = zip.match(/\d/g);
+if (phnnumber.length != 10){
+alert("Please enter valid phone number");
+}
+}
+// name();
+phnnumber();
+}
+    </script>
+</body>
+</html>

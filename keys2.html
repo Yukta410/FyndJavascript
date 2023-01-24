@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+<!-- ====================up, down, press form================== -->
+    <!-- <div id="form">
+        <h1 id="h1">Keyboard Event</h1>
+        <p>OnKeyDown</p>
+        <input type="text" id="down">
+        <p>OnKeyUp</p>
+        <input type="text" id="up">
+        <p>OnKeyPress</p>
+        <input type="text" id="press"> -->
+
+<!-- ====================Task================== -->
+        <!-- <p>Type Q to see today's Quote</p>
+        <input type="text" id="up"> -->
+    <!-- </div> -->
+
+    <script>
+// ====================up, down, press form==================//
+        //  let keyevent1=document.getElementById('down')
+        // keyevent1.addEventListener('keydown',function(e){
+        //     console.log(e)
+        // })
+
+        // let keyevent2=document.getElementById('up')
+        // keyevent2.addEventListener('keyup',function(e){
+        //     console.log(e)
+        // })
+
+
+        // let keyevent3=document.getElementById('press')
+        // keyevent3.addEventListener('keypress',function(e){
+        //     console.log(e)
+        // })
+
+// ===================Alert on typing alphabet===================//
+        // document.addEventListener('keyup', (e)=>{
+        //     if(e.key=='u' || e.key=='U'){
+        //         alert('Presses u')
+        //         console.log(e.keycode)
+        //     }
+        // })
+
+// ====================Control key events==================//
+            document.addEventListener('keyup', (e)=>{
+                if(e.key=='q' && e.ctrlKey){
+                alert('See you')
+                console.log(e.keycode)
+                 }
+            })
+        // document.addEventListener('keyup', (e)=>{
+        //     // e.preventDefault();       //we cannot use preventdefalut on keyup
+        //     if(e.key=='s' && e.ctrlKey){
+        //         alert('Hello')
+        //         console.log(e.keycode)
+        //     }
+        // })
+
+        document.addEventListener('keyup', (e)=>{          //so use preventdefault on keydown 
+            e.preventDefault();      
+            if(e.key=='s' && e.ctrlKey){
+                alert('Hello')
+                console.log(e.keycode)
+            }
+        })
+        
+//================Self Task================//
+        // document.addEventListener('keyup', (e)=>{      
+        //     if(e.key=='z' && e.ctrlKey){
+        //         alert("Press enter to close this!")
+        //         console.log(e)
+        //     }
+        // })
+
+        // document.addEventListener('keyup', (e)=>{
+        //     if(e.key=='q' || e.key=='Q'){
+        //         alert("Believe you can and you're halfway there!")
+        //         console.log(e.keycode)
+        //     }
+        // })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Math in JS</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo').innerHTML=Math.PI
+        document.getElementById('demo').innerHTML=Math.E
+        document.getElementById('demo').innerHTML=Math.round(5.7)
+        document.getElementById('demo1').innerHTML=Math.round(5.5)      //>.5=upper val, <.5=lower val
+        document.getElementById('demo').innerHTML=Math.ceil(5.7)        //always rounds up with upper val
+        document.getElementById('demo').innerHTML=Math.floor(5.7)        //always rounds up with lower val
+        document.getElementById('demo').innerHTML=Math.trunc(5.9)        //only returms integer val, removes .-- part
+        document.getElementById('demo').innerHTML=Math.ceil(5.7)        //always rounds up with upper val
+        document.getElementById('demo').innerHTML=Math.sign(5)        //ret 1(positive), if -5 then -1, nothing will be ret for 0
+        document.getElementById('demo').innerHTML=Math.pow(2,4)        // 2 raiseed to power 4
+        document.getElementById('demo').innerHTML=Math.abs(-5.9)+Math.abs(1.1)      //ret absolute val, removes -ve sign
+        document.getElementById('demo').innerHTML=Math.min(34, 65, 7, 45)        //ret min val
+        document.getElementById('demo').innerHTML=Math.max(34, 65, 7, 45)        //ret max val
+        document.getElementById('demo').innerHTML=Math.random()        //ret random vals bet 0 and 1 
+        document.getElementById('demo').innerHTML=(Math.random()*10 )       //ret random vals bet 0 and 10
+        document.getElementById('demo').innerHTML=Math.floor(Math.random()*10 )       //ret random vals bet 0 and 10
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 100px;
+        }
+        .container{
+            border: 2px solid;
+            width: 102px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque consequatur fuga sint ut, laudantium dolore officiis enim amet ipsam maxime commodi quis voluptatem similique veniam ea eaque nulla minus.</p>
+    </div>
+    
+    <script>
+
+//===============Mouse up and down===============//
+    //    const demo = document.getElementById('demo');
+    //     ['mousedown', 'mouseup'].forEach( type =>{
+    //         if(type === 'mousedown'){
+    //             demo.addEventListener(type, ()=>
+    //                 console.log('mousedown')
+    //             )
+    //         }
+    //         else if (type === 'mouseup'){
+    //             demo.addEventListener(type, ()=>{
+    //                 console.log('mouseup')
+    //             })
+    //         }
+    //     })
+
+//===============Mouse over and out===============//
+        const demo1 = document.getElementById('demo');
+        ['mouseover', 'mouseout'].forEach( type =>{
+            if(type === 'mouseover'){
+                demo.addEventListener(type, ()=>
+                    console.log('mouseover')
+                )
+            }
+            else if (type === 'mouseout'){
+                demo.addEventListener(type, ()=>{
+                    console.log('mouseout')
+                })
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+// ======================Date and its formats==========================//
+        // const d = new Date();               //predefined
+        // const d = new Date("2020-12-30");       //yyyy-mm-dd format
+        // const d = new Date(2021,11,23,10,23,30);   //indexing starts from 0
+        // const d = new Date(2021);                       //single val passed will be treted as val in milisecs not year
+        // const d = new Date(100);                            //will give same val from 0-100 bcpz milisecs val starts froom 1000
+        // const d = new Date("05/14/1989");                       //date format
+        // const d = new Date("Mar 18 2021");                 //forats not case sensitive
+        // document.getElementById('demo').innerHTML=d
+        // document.getElementById('demo').innerHTML=d.toDateString()
+        // document.getElementById('demo').innerHTML=d.toISOString()
+        // document.getElementById('demo').innerHTML=d.toUTCString()
+
+        // let m=Date.parse("march 18 2021")
+        // console.log(m)
+        // const d=new Date(m);                
+        // document.getElementById('demo').innerHTML=d.getFullYear()       //will ret only tear
+        // document.getElementById('demo').innerHTML=d.getMonth()       //will ret only mon
+        //getDate getMinute hours secs etc
+
+// ======================Current time zones==========================//
+        let m=Date.parse("march 18 2021")
+        console.log(m);
+
+        const d=new Date();   
+        document.getElementById('demo').innerHTML=d
+        
+    </script>
+</body>
+</html>

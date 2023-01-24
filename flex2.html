@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexDemo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ .container{
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    width: 1000px;
+    margin: 150px 250px;
+        }
+        .a{
+            background-color: plum;
+            border: 2px solid black;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .b{
+            background-color: palegoldenrod;
+            border: 2px solid black;
+            flex-basis: 200px;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+        .c{
+            background-color: tomato;
+            border: 2px solid black;
+            flex-basis: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        
+        .popup{
+            position: fixed;
+            top:  0px;
+            left: 0px;
+            border: 1px solid gray;
+            background-image: linear-gradient(to right, lightgrey,lightslategray,rgb(26, 39, 52)); 
+            height: 100px;
+            width: 250px;
+            padding: 8px;
+            animation: pop 2s infinite;
+            /* border-radius: 10px; */
+            
+        }
+
+        @keyframes pop{
+            0%{left: -200px; top: -200px;}
+            100%{left: 20px; top: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h2>Success!</h2>
+        <p>Your data is submitted successfully</p>
+
+    </div>
+</body>
+</html>

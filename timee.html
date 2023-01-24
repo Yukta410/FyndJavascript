@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+            margin: 30px;
+        }
+
+        .timebox{
+            border: 1px solid #39FF14;
+            width: 180px;
+            height: 100px;
+            display: inline-block;
+            /* box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #39FF14,
+              0 0 0.8rem #39FF14,
+              0 0 2.8rem #39FF14,
+              inset 0 0 1.3rem #39FF14; */
+        }
+        h1{
+            color: #39FF14;
+            padding-left: 20px;
+            color: #fff;
+            text-shadow:
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+        }
+        p{
+            color: #39FF14;
+            padding-left: 20px;
+        }
+        .demo{
+            animation: flicker 1.5s infinite 
+        }
+        /* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="timebox">
+            <h1 class="demo">India</h1>
+            <p class="demo" id="indiatime"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="timebox">
+            <h1 class="demo">USA</h1>
+            <p class="demo" id="ustime"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="timebox">
+            <h1 class="demo">Australia</h1>
+            <p class="demo" id="austime"></p>
+        </div>
+    </div>
+    <script>
+var indiantime=function(){
+    document.getElementById("indiatime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Kolkata', timeStyle:'long', hourCycle:'h12'})
+}
+
+indiantime()
+setInterval(indiantime,1000)
+
+// ====================================
+var usatime=function(){
+    document.getElementById("ustime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Jakarta', timeStyle:'long', hourCycle:'h24'})
+}
+
+usatime()
+setInterval(usatime,1000)
+
+// =====================================
+var ausntime=function(){
+    document.getElementById("austime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Australia/Sydney', timeStyle:'long', hourCycle:'h24'})
+}
+
+ausntime()
+setInterval(ausntime,1000)
+    </script>
+
+</body>
+</html>

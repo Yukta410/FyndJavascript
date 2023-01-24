@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        html{
+            color: #333;
+        }
+        div, section{
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document object model</h1>
+
+    <h2>Id (#demo)</h2>
+    <div id="demo">Access by ID</div>
+
+    <h2>Class (.demo)</h2>
+    <div class="demo">Access<span style="color: blueviolet;"> by class</span> (1)</div>
+    <div class="demo">Access <span style="color: brown;">by class</span>  (2)</div>
+
+    <h2>Tag (section)</h2>
+    <section>Access <span>by tag</span> 1</section>
+    <section>Access <span>by tag</span>  2</section>
+
+    <h2>Qurey selector</h2>
+    <div id="demo-query">Access me by Qurey 1</div>
+
+    <h2>Qurey selector</h2>
+    <div class="demo-query-class">Access me by Qurey 1</div>
+
+    <h2>Query selecor all</h2>
+    <div class="demo-query-all">Access by query all 2</div>
+
+    <!-- const demoQuery=document.querySelector('span');
+    demoQuery.style.backgroundColor='pink'; -->
+</body>
+</html>

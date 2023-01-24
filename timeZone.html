@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a id="indiatime">India</a></li><br>
+        <li><a id="ustime">USA</a></li><br>
+        <li><a id="austime">Australia</a></li><br>
+    </ul>   
+
+
+
+    <script>
+
+var indiantime=function(){
+    document.getElementById("indiatime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Kolkata', timeStyle:'long', hourCycle:'h12'})
+}
+
+indiantime()
+setInterval(indiantime,1000)
+
+// ====================================
+var usatime=function(){
+    document.getElementById("ustime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Asia/Jakarta', timeStyle:'long', hourCycle:'h24'})
+}
+
+usatime()
+setInterval(usatime,1000)
+
+// =====================================
+var ausntime=function(){
+    document.getElementById("austime").innerHTML = new Date().toLocaleString('en-US', {timeZone:'Australia/Sydney', timeStyle:'long', hourCycle:'h24'})
+}
+
+ausntime()
+setInterval(ausntime,1000)
+    </script>
+
+</body>
+</html>

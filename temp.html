@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="regEx();">
+Phone number:<br/>
+<input type="text" /><br/>
+<br/>
+<input type="submit" />
+</form>
+<script>
+function regEx(){
+function testZip(){
+var phn = document.getElementsByTagName("input");
+
+var phonenumber = phn.match(!/^\d{10}$/);
+if (phonenumber.length != 10||phn == ""){
+alert("Please enter valid phone number.");
+}
+}
+testZip();
+}
+</script>
+</body>
+</html>
